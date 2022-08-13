@@ -1,0 +1,210 @@
+.life {
+    font-size: 24px;
+    height: 200px;
+    width: auto;
+    margin: 20px 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.comands {
+    height: 100px;
+    width: auto;
+    margin: 20px 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logs {
+    padding: 20px;
+    height: auto;
+    width: auto;
+    margin: 20px 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2)
+}
+
+.text-endgame {
+    height: 100px;
+    width: auto;
+    font-size: 32px;
+    margin: 20px 20px;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2)
+}
+
+.player-life {
+    height: 30px;
+    width: 500px;
+    border: black 1px;
+    border-style: solid;
+    margin: 20px 20px;
+}
+
+.player-life-bar {
+    height: 100%;
+    background: green;
+}
+
+.monster-life {
+    height: 30px;
+    width: 500px;
+    border: black 1px;
+    border-style: solid;
+    margin: 20px 20px;
+}
+
+.monster-life-bar {
+    height: 100%;
+    background: green;
+}
+
+.bt-start {
+    border: none;
+    background: rgb(107, 107, 234);
+    padding: 5px;
+    width: max-content;
+    height: min-content;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    transition-duration: 100ms;
+}
+
+.bt-start:hover {
+    border-style: solid;
+    border-color: white;
+    background: rgb(107, 107, 234);
+    padding: 5px;
+    width: max-content;
+    height: min-content;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    transition-duration: 100ms;
+}
+
+.bt-atack {
+    border: none;
+    background: red;
+    padding: 5px;
+    width: max-content;
+    height: min-content;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    transition-duration: 100ms;
+}
+
+.bt-atack:hover {
+    border-style: solid;
+    border-color: white;
+    background: red;
+    padding: 5px;
+    width: max-content;
+    height: min-content;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.9);
+}
+
+.bt-special-atack {
+    border: none;
+    background: yellow;
+    padding: 5px;
+    width: max-content;
+    height: min-content;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    transition-duration: 100ms;
+}
+
+.bt-special-atack:hover {
+    border-style: solid;
+    border-color: white;
+    background: yellow;
+    padding: 5px;
+    width: max-content;
+    height: min-content;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.bt-heal {
+    border: none;
+    background: green;
+    padding: 5px;
+    height: min-content;
+    height: min-content;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    transition-duration: 100ms;
+}
+
+.bt-heal:hover {
+    border-style: solid;
+    border-color: white;
+    background: green;
+    padding: 5px;
+    height: min-content;
+    height: min-content;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.bt-giveup {
+    border: none;
+    background: gray;
+    padding: 5px;
+    height: min-content;
+    height: min-content;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    transition-duration: 100ms;
+}
+
+.bt-giveup:hover {
+    border-style: solid;
+    border-color: white;
+    background: gray;
+    padding: 5px;
+    height: min-content;
+    height: min-content;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.player-log {
+    height: 80px;
+    width: auto;
+    margin: 20px;
+    font-size: 20px;
+    color: white;
+    background: rgb(110, 110, 235);
+    display: flex;
+    justify-content:center ;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2)
+}
+
+.monster-log {
+    height: 80px;
+    width: auto;
+    margin: 20px;
+    font-size: 20px;
+    color: white;
+    background: rgb(235, 110, 110);
+    display: flex;
+    justify-content:center ;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2)
+}

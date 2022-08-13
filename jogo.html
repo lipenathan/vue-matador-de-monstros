@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>Matador de monstros</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://unpkg.com/vue@2"></script>
+</head>
+
+<body>
+    <main id="game">
+        <div class="life">
+            <div class="player">
+                <p>Jogador</p>
+                <div class="player-life">
+                    <div class="player-life-bar" :style="{'width': playerLifeStr}"></div>
+                </div>
+                <p>{{playerLifeStr}}</p>
+            </div>
+            <div class="monster">
+                <p>Monstro</p>
+                <div class="monster-life">
+                    <div class="monster-life-bar" :style="{'width': monsterLifeStr}"></div>
+                </div>
+                <p>{{monsterLifeStr}}</p>
+            </div>
+        </div>
+        <div v-if="flagEngGame && textEndGame.length != 0" class="text-endgame">
+            <p>{{textEndGame}}</p>
+        </div>
+        <div class="comands">
+            <template v-if="!flagEngGame">
+                <button @click="atack()" class="bt-atack">Ataque</button>
+                <button @click="specialAtack()" class="bt-special-atack">Ataque Especial</button>
+                <button @click="heal()" class="bt-heal">Curar</button>
+                <button @click="flagEngGame = true" class="bt-giveup">Desistir</button>
+            </template>
+            <template v-else>
+                <button @click="startGame()" class="bt-start">Iniciar Jogo</button>
+            </template>
+        </div>
+        <template v-if="logList.length > 0">
+            <div class="logs">
+                <div v-for="log in logList.reverse()" :class="log.style">
+                    <p>{{log.msg}}</p>
+                </div>
+            </div>
+        </template>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
